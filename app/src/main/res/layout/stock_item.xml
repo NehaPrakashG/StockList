@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/constraint"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:padding="@dimen/margin_medium"
+        android:id="@+id/mainLinear"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/linear_ly"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                tools:ignore="MissingConstraints"/>
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_large"
+                tools:ignore="MissingConstraints"/>
+            <TextView
+                android:id="@+id/type_tv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_small"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                tools:ignore="MissingConstraints"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_xlarge"
+            tools:ignore="MissingConstraints"/>
+
+    </LinearLayout>
+        <include layout="@layout/toolbar_layout"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

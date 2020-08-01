@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StockList</string>
+
+    <string name="search_name">Search stock name</string>
+
+    <!--stock api -->
+    <string name="id">id</string>
+    <string name="name">name</string>
+    <string name="price">Price</string>
+    <string name="companyType">companyType</string>
+    <string name="alltimehigh">All time High Price</string>
+    <string name="address">Address</string>
+    <string name="website">Website</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="title_activity_deatils">DeatilsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="SearchFilterFragment">SearchFilterFragment</string>
+    <string name="FragmentStockDetails">FragmentStockDetails</string>
+
+    <string name="SearchName">Search Companies..</string>
+
+</resources>
